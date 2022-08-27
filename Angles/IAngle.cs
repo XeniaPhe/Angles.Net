@@ -4,6 +4,7 @@
     {
         /*
          * This library is written by Mustafa Tunahan BAS
+         * Github address : https://github.com/XeniaPhe/CSharp.Net-Dedicated-Angles-Library
          */
 
         #region Properties
