@@ -8,14 +8,14 @@
     <ApplicationIcon>Angles.NetLogo.ico</ApplicationIcon>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>Angles.Net</PackageId>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>XeniaPhe</Authors>
     <Company>XeniaPhe</Company>
     <Product>Angles.Net</Product>
     <Description>This library is dedicated to easily and quickly handling and manipulating different types and units of angles</Description>
     <PackageIcon>Angles.NetLogo.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageProjectUrl>https://www.nuget.org/packages/Angles.Net/</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/XeniaPhe/Angles.Net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/XeniaPhe/Angles.Net</RepositoryUrl>
     <RepositoryType>'git'</RepositoryType>
   </PropertyGroup>
@@ -25,11 +25,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\src\Angles.NetLogo.png">
+    <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="..\README.md">
+    <None Include="..\src\Angles.NetLogo.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

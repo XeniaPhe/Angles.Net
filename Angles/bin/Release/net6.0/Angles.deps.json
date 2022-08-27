@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Angles/1.0.2": {
+      "Angles/1.0.3": {
         "runtime": {
           "Angles.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "Angles/1.0.2": {
+    "Angles/1.0.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
