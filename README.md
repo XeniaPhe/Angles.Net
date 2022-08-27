@@ -1,5 +1,5 @@
 
-![Logo](src/Angles.NetLogo.png =250x250 "Logo")
+![Logo](src/Angles.NetLogo.png "Logo" = 250x250)
 
 
 # Angles.Net
