@@ -1,0 +1,12 @@
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\bin\Release\net6.0\Angles.deps.json
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\bin\Release\net6.0\Angles.dll
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\bin\Release\net6.0\Angles.pdb
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\obj\Release\net6.0\Angles.csproj.AssemblyReference.cache
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\obj\Release\net6.0\Angles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\obj\Release\net6.0\Angles.AssemblyInfoInputs.cache
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\obj\Release\net6.0\Angles.AssemblyInfo.cs
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\obj\Release\net6.0\Angles.csproj.CoreCompileInputs.cache
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\obj\Release\net6.0\Angles.dll
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\obj\Release\net6.0\refint\Angles.dll
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\obj\Release\net6.0\Angles.pdb
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\obj\Release\net6.0\ref\Angles.dll

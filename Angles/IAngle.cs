@@ -3,7 +3,7 @@
     internal interface IAngle<AngleT, NumericT> : IFormattable, IComparable, IComparable<AngleFloat>, IComparable<AngleDouble>, IComparable<AngleInt>
     {
         /*
-         * This library is written by Mustafa Tunahan BAS
+         * This library is written by XeniaPhe (Mustafa Tunahan BAS)
          * Github address : https://github.com/XeniaPhe/CSharp.Net-Dedicated-Angles-Library
          */
 

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Angles.Net</id>
+    <version>1.0.0</version>
+    <authors>XeniaPhe</authors>
+    <icon>Angles.NetLogo.png</icon>
+    <readme>README.md</readme>
+    <description>This library is dedicated to easily and quickly handling and manipulating different types and units of angles</description>
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+    <contentFiles>
+      <files include="any/net6.0/Angles.NetLogo.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\bin\Release\net6.0\Angles.dll" target="lib\net6.0\Angles.dll" />
+    <file src="C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\Angles.NetLogo.ico" target="content\Angles.NetLogo.ico" />
+    <file src="C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\Angles.NetLogo.ico" target="contentFiles\any\net6.0\Angles.NetLogo.ico" />
+    <file src="C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles.NetLogo.png" target="\Angles.NetLogo.png" />
+    <file src="C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\README.md" target="\README.md" />
+  </files>
+</package>
