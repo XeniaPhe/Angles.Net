@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-    <img src="src/Angles.NetLogo.png" width="300" height="350" />
+    <img src="src/Angles.NetLogo.png" width="350" height="275" />
 </p>
 
 
