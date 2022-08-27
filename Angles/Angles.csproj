@@ -15,7 +15,7 @@
     <Description>This library is dedicated to easily and quickly handling and manipulating different types and units of angles</Description>
     <PackageIcon>Angles.NetLogo.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageProjectUrl>https://www.nuget.org/packages/Angles.Net/</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/XeniaPhe/Angles.Net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/XeniaPhe/Angles.Net</RepositoryUrl>
     <RepositoryType>'git'</RepositoryType>
   </PropertyGroup>
