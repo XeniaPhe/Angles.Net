@@ -5,6 +5,31 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ApplicationIcon>Angles.NetLogo.ico</ApplicationIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>Angles.Net_XeniaPhe_Mustafa_Tunahan_Bas</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>XeniaPhe</Authors>
+    <Company>XeniaPhe</Company>
+    <Product>Angles.Net</Product>
+    <Description>This library is dedicated to easily and quickly handling and manipulating different types and units of angles</Description>
+    <PackageIcon>Angles.NetLogo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Angles.NetLogo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Angles.NetLogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

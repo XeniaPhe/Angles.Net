@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mtuna\\Desktop\\Programming Stuff\\WorkSpaces\\Visual Studio WorkSpace\\C#\\2022\\Angles\\Angles.csproj",
-      "projectName": "Angles",
-      "projectPath": "C:\\Users\\mtuna\\Desktop\\Programming Stuff\\WorkSpaces\\Visual Studio WorkSpace\\C#\\2022\\Angles\\Angles.csproj",
+      "projectUniqueName": "C:\\Users\\mtuna\\Desktop\\CSharp.Net-Dedicated-Angles-Library\\Angles\\Angles.csproj",
+      "projectName": "Angles.Net_XeniaPhe_Mustafa_Tunahan_Bas",
+      "projectPath": "C:\\Users\\mtuna\\Desktop\\CSharp.Net-Dedicated-Angles-Library\\Angles\\Angles.csproj",
       "packagesPath": "C:\\Users\\mtuna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mtuna\\Desktop\\Programming Stuff\\WorkSpaces\\Visual Studio WorkSpace\\C#\\2022\\Angles\\obj\\",
+      "outputPath": "C:\\Users\\mtuna\\Desktop\\CSharp.Net-Dedicated-Angles-Library\\Angles\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
