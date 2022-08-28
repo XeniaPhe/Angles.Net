@@ -43,7 +43,7 @@ It allows conversions and operations between different units and representations
 
 ## License
 
-[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://www.nuget.org/packages/Angles.Net/1.0.7/License)
+[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://www.nuget.org/packages/Angles.Net/1.1.0/License)
 
 [BSD-2-Clause](https://choosealicense.com/licenses/bsd-2-clause/)
 
