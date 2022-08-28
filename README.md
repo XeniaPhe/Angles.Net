@@ -54,8 +54,8 @@ It allows conversions and operations between different units and representations
 You can install Angles.Net by opening the Package Manager Console in the Visual Studio from View/Other Windows/Package Manager Console and typing in one of the commands :
 
 ```bash
- Install-Package Angles.Net -Version 1.0.7
- dotnet add package Angles.Net --version 1.0.7
+ Install-Package Angles.Net -Version 1.1.0
+ dotnet add package Angles.Net --version 1.1.0
 ```
 
 Alternatively, you can use the NuGet Package Manager GUI to install Angles.Net
