@@ -36,7 +36,7 @@ It allows conversions and operations between different units and representations
        - [Interface Implementations](#interface-implementations)
        - [Static Methods](#static-methods)
     - [Important Notes](#important-notes)
-* [Lessons Learned](#lessons)
+* [Lessons Learned](#lessons-learned)
 * [FAQ](#faq)
 * [Authors](#authors)
 
