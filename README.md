@@ -2,7 +2,6 @@
     <img src="src/Angles.NetLogo.png" width="350" height="275" />
 </p>
 
-
 # Angles.Net
 
 Angles.Net library is dedicated to easily and quickly handling and manipulating different types and units of angles.
@@ -18,8 +17,8 @@ It allows conversions and operations between different units and representations
 You can install Angles.Net by opening the Package Manager Console in the Visual Studio from View/Other Windows/Package Manager Console and typing in one of the commands :
 
 ```bash
- Install-Package Angles.Net -Version 1.0.3
- dotnet add package Angles.Net --version 1.0.3
+ Install-Package Angles.Net -Version 1.0.7
+ dotnet add package Angles.Net --version 1.0.7
 ```
 
 Alternatively, you can use the NuGet Package Manager GUI to install Angles.Net
@@ -465,10 +464,109 @@ public void TestingMethods()
 }
 ```
 
+* GetDeltaAngle(AngleFloat other) : AngleFloat
+* GetDeltaAngle(AngleDouble other) : AngleFloat
+* GetDeltaAngle(AngleInt other) : AngleFloat
+* GetDeltaAngle(float other) : AngleFloat
+* GetDeltaAngle(float other, AngleUnit unit) : AngleFloat
 
+These methods, which have their equivalents in other two angle structs, calculate the shortest difference between angles and return a new angle object that has a value between 0 and 1 turn.
 
+* CompareNormalizedAngles(AngleFloat other) : int
+* CompareNormalizedAngles(AngleDouble other) : int
+* CompareNormalizedAngles(AngleInt other) : int
+* CompareNormalizedAngles(float other) : int
+* CompareNormalizedAngles(float other, AngleUnit unit) : int
 
+These methods, as opposed to CompareTo methods (they're not covered yet), compare the normalized angles(angles between -1/2 and 1/2 turn) and return 0 if they're equal, return -1 if the parameter is greater and return 1 if the angle instance from which the method is called is greater. The other two angle structs have their equivalent methods.
 
+* IsParallelTo(AngleDouble other) : bool
+* IsParallelTo(AngleFloat other) : bool
+* IsParallelTo(AngleInt other) : bool
+* IsParallelTo(double other) : bool
+* IsParallelTo(double other, AngleUnit unit) : bool
 
+These methods could be used to check if two angles are parallel to each other. Other angle structs have their equivalent IsParallelTo methods as well.
 
+* IsPerpendicularTo(AngleInt other) : bool
+* IsPerpendicularTo(AngleFloat other) : bool
+* IsPerpendicularTo(AngleDouble other) : bool
+* IsPerpendicularTo(int other) : bool
+* IsPerpendicularTo(int other, AngleUnit unit) : bool
+
+These methods could be used to check if two angles are perpendicular to each other. Other angle structs have their equivalents for IsPerpendicularTo as well.
+
+* IsComplementaryTo(AngleFloat other) : bool
+* IsComplementaryTo(AngleDouble other) : bool
+* IsComplementaryTo(AngleInt other) : bool
+* IsComplementaryTo(float other) : bool
+* IsComplementaryTo(float other, AngleUnit unit) : bool
+
+These methods could be used to check if two angles are complementary to each other. Other angle structs have their equivalents for IsComplementaryTo as well.
+
+* IsSupplementaryTo(AngleFloat other) : bool
+* IsSupplementaryTo(AngleDouble other) : bool
+* IsSupplementaryTo(AngleInt other) : bool
+* IsSupplementaryTo(float other) : bool
+* IsSupplementaryTo(float other, AngleUnit unit) : bool
+
+These methods could be used to check if two angles are supplementary to each other. Other angle structs have their equivalents for IsSupplementaryTo as well.
+
+* IsCoterminalTo(AngleFloat other) : bool
+* IsCoterminalTo(AngleDouble other) : bool
+* IsCoterminalTo(AngleInt other) : bool
+* IsCoterminalTo(float other) : bool
+* IsCoterminalTo(float other, AngleUnit unit) : bool
+
+These methods could be used to check if two angles are coterminal to each other. Other angle structs have their equivalents for IsCoterminalTo as well.
+
+#### Interface Implementations
+
+Each Angle struct implements IFormattable, IComparable, IComparable<AngleFloat>, IComparable<AngleDouble>, IComparable<AngleInt> interfaces.
+
+AngleFloat has these methods :
+
+* CompareTo(AngleFloat other) : int
+* CompareTo(AngleDouble other) : int
+* CompareTo(AngleInt other) : int
+* CompareTo(object? obj) : int
+* Equals(AngleFloat other) : bool
+* Equals(object? obj) : bool
+* ToString() : string
+* ToString(string? format,IFormatProvider? formatProvider) : string
+* GetHashCode() : int
+
+CompareTo overloads work same as comparison operators do, the overload with object parameter actually first determines which type of angle struct the object is and then calls the related CompareTo overload and returns it result. If the passed object is not an instance of any of the angle structs,then it will return Int32.MaxValue.
+
+Equals overloads compare not only signed magnitudes of angles but also require them to be of the same type and same unit.
+
+The parameterless ToString overload return a string as follows : "{angle} {unit} {type}"
+
+The other ToString overload lets you pass a format for how the angle should be printed.
+
+Similar to these,AngleDouble has :
+
+* CompareTo(AngleDouble other) : int
+* CompareTo(AngleFloat other) : int
+* CompareTo(AngleInt other) : int
+* CompareTo(object? obj) : int
+* Equals(AngleDouble other) : bool
+* Equals(object? obj) : bool
+* ToString() : string
+* ToString(string? format,IFormatProvider? formatProvider) : string
+* GetHashCode() : int
+
+and AngleInt has : 
+
+* CompareTo(AngleInt other) : int
+* CompareTo(AngleFloat other) : int
+* CompareTo(AngleDouble other) : int
+* CompareTo(object? obj) : int
+* Equals(AngleInt other) : bool
+* Equals(object? obj) : bool
+* ToString() : string
+* ToString(string? format,IFormatProvider? formatProvider) : string
+* GetHashCode() : int
+
+#### Static methods
 
