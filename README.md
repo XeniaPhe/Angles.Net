@@ -18,8 +18,8 @@ It allows conversions and operations between different units and representations
 You can install Angles.Net by opening the Package Manager Console in the Visual Studio from View/Other Windows/Package Manager Console and typing in one of the commands :
 
 ```bash
- Install-Package Angles.Net -Version 1.0.3
- dotnet add package Angles.Net --version 1.0.3
+ Install-Package Angles.Net -Version 1.0.2
+ dotnet add package Angles.Net --version 1.0.2
 ```
 
 Alternatively, you can use the NuGet Package Manager GUI to install Angles.Net
@@ -140,84 +140,103 @@ Constructors take two parameters as seen above. First one is the angle value whi
 
 ### Public Properties
 
-* AngleUnit
+* AngleUnit : AngleUnit
+&nbsp;
 Returns the unit of the angle
-* Angle
+* Angle : float
+&nbsp;
 Returns the angle
-* Revolutions
+* Revolutions : float
+&nbsp;
 Returns the number of revolutions of the angle
-* ZeroTo360_DegreesAngle
+* ZeroTo360_DegreesAngle : float
+&nbsp;
 Normalizes the angle between 0 and 360 degrees and returns it (does not alter the original angle and unit)
-* Minus180To180_DegreesAngle
+* Minus180To180_DegreesAngle : float
+&nbsp;
 Normalizes the angle between -180 and 180 degrees and returns it (does not alter the original angle and unit)
-* ZeroTo2PI_RadiansAngle
+* ZeroTo2PI_RadiansAngle : float
+&nbsp;
 Normalizes the angle between 0 and 2ᴨ radians and returns it (does not alter the original angle and unit)
-* MinusPIToPI_RadiansAngle
+* MinusPIToPI_RadiansAngle : float
+&nbsp;
 Normalizes the angle between -ᴨ and ᴨ radians and returns it (does not alter the original angle and unit)
-* ZeroTo400_GradiansAngle
+* ZeroTo400_GradiansAngle : float
+&nbsp;
 Normalizes the angle between 0 and 400 gradians and returns it (does not alter the original angle and unit)
-* Minus200To200_GradiansAngle
+* Minus200To200_GradiansAngle : float
+&nbsp;
 Normalizes the angle between -200 and 200 gradians and returns it (does not alter the original angle and unit)
-* OpenInterval_DegreesAngle
+* OpenInterval_DegreesAngle : float
+&nbsp;
 Converts the angle to degrees without normalizing it and returns it (does not alter the original angle and unit)
-* OpenInterval_RadiansAngle
+* OpenInterval_RadiansAngle : float
+&nbsp;
 Converts the angle to radians without normalizing it and returns it (does not alter the original angle and unit)
-* OpenInterval_GradiansAngle
+* OpenInterval_GradiansAngle : float
+&nbsp;
 Converts the angle to gradians without normalizing it and returns it (does not alter the original angle and unit)
-* ComplementaryAngle
-* SupplementaryAngle
+* ComplementaryAngle : float
+* SupplementaryAngle : float
+&nbsp;
 These two properties return the angle's complementary and supplementary angles respectively
-* Sin, Cos, Tan, Cot, Sec, Csc, Sinh, Cosh, Tanh, Coth, Sech, Csch
-These are the trigonometric properties and they're straightforward and thus they require no explanation
-* IsPositiveAngle, IsNegativeAngle, IsZeroAngle
-* IsAcuteAngle, IsRightAngle, IsObtuseAngle, IsStraightAngle, IsReflexAngle, IsCompleteAngle
-These properties can be used to query the general location of the angle quickly
-* IsNormalizedAngleAcuteAngle, IsNormalizedAngleRightAngle, IsNormalizedAngleObtuseAngle, IsNormalizedAngleStraightAngle, IsNormalizedAngleReflexAngle, IsNormalizedAngleCompleteAngle
-These properties first normalize the angle between 0 and 1 turn before checking it (does not alter the original angle and unit)
-* ReferenceAngle
+* ReferenceAngle : float
+&nbsp;
 Returns the reference angle of the angle
-* Quadrant
+* Sin, Cos, Tan, Cot, Sec, Csc, Sinh, Cosh, Tanh, Coth, Sech, Csch : float
+&nbsp;
+These are the trigonometric properties and they're straightforward and thus they require no explanation
+* IsPositiveAngle, IsNegativeAngle, IsZeroAngle : bool
+* IsAcuteAngle, IsRightAngle, IsObtuseAngle, IsStraightAngle, IsReflexAngle, IsCompleteAngle : bool
+&nbsp;
+These properties can be used to query the general location of the angle quickly
+* IsNormalizedAngleAcuteAngle, IsNormalizedAngleRightAngle, IsNormalizedAngleObtuseAngle, IsNormalizedAngleStraightAngle, IsNormalizedAngleReflexAngle, IsNormalizedAngleCompleteAngle : bool
+&nbsp;
+These properties first normalize the angle between 0 and 1 turn before checking it (does not alter the original angle and unit)
+* Quadrant : int
+&nbsp;
 Returns the quadrant (1,2,3,or 4) that the angle is within
 
+**These properties belong to AngleFloat struct, and they're identical to the other two struct's except for that the properties which return float in AngleFloat return double in AngleDouble and int in AngleInt.**
 ### Operator Overloads
 
 #### Unary Operators
 
-* +(AngleFloat)
-* +(AngleDouble)
-* +(AngleInt)
+* +(AngleFloat) : AngleFloat
+* +(AngleDouble) : AngleDouble
+* +(AngleInt) : AngleInt
 
 These operators return the angle object itself
 
-* -(AngleFloat)
-* -(AngleDouble)
-* -(AngleInt)
-* !(AngleFloat)
-* !(AngleDouble)
-* !(AngleInt)
-* ~(AngleFloat)
-* ~(AngleDouble)
-* ~(AngleInt)
+* -(AngleFloat) : AngleFloat
+* -(AngleDouble) : AngleDouble
+* -(AngleInt) : AngleInt
+* !(AngleFloat) : AngleFloat
+* !(AngleDouble) : AngleDouble
+* !(AngleInt) : AngleInt
+* ~(AngleFloat) : AngleFloat
+* ~(AngleDouble) : AngleDouble
+* ~(AngleInt) : AngleInt
 
 These operators negate the angle and return the negated angle object without altering the original angle
 
-* ++(AngleFloat)
-* ++(AngleDouble)
-* ++(AngleInt)
-* --(AngleFloat)
-* --(AngleDouble)
-* --(AngleInt)
+* ++(AngleFloat) : AngleFloat
+* ++(AngleDouble) : AngleDouble
+* ++(AngleInt) : AngleInt
+* --(AngleFloat) : AngleFloat
+* --(AngleDouble) : AngleDouble
+* --(AngleInt) : AngleInt
 
 These operators increment and decrement the angle by one degree,one radian, or one gradian depending on the unit of the angle
 
 #### Addition/Subtraction Operators
 
-*  +(AngleFloat, AngleFloat)
-*  +(AngleFloat, AngleDouble)
-*  +(AngleFloat, AngleInt)
-*  -(AngleFloat, AngleFloat)
-*  -(AngleFloat, AngleDouble)
-*  -(AngleFloat, AngleInt)
+*  +(AngleFloat, AngleFloat) : AngleFloat
+*  +(AngleFloat, AngleDouble) : AngleFloat
+*  +(AngleFloat, AngleInt) : AngleFloat
+*  -(AngleFloat, AngleFloat) : AngleFloat
+*  -(AngleFloat, AngleDouble) : AngleFloat
+*  -(AngleFloat, AngleInt) : AngleFloat
 
 
 All of these + and - operator overloads first convert the unit of right hand side parameter to left hand side parameter's unit unless they're of the same units, and then perform the addition/subtraction operation, then finally return the resulting AngleFloat object. They're safe to use because they automatically convert the units if they're different and return the resulting angle in the left hand side's unit.
@@ -225,10 +244,10 @@ All of these + and - operator overloads first convert the unit of right hand sid
 &nbsp;
 Apart from these, there exist two more options for each addition and subtraction :
 
-* +(AngleFloat, float)
-* +(float, AngleFloat)
-* -(AngleFloat, float)
-* -(float, AngleFloat)
+* +(AngleFloat, float) : AngleFloat
+* +(float, AngleFloat) : AngleFloat
+* -(AngleFloat, float) : AngleFloat
+* -(float, AngleFloat) : AngleFloat
 
 Using these overloads however, might be risky since the primitive types are assumed to be of the same unit as the Angle object. So, when used carelessly, they might cause unintended results and confusion.
 
@@ -257,34 +276,34 @@ public void TestingOperators()
 
 #### Multiplication and Division Operators
 
-* *(AngleDouble, double)
-* *(double, AngleDouble)
+* *(AngleDouble, double) : AngleDouble
+* *(double, AngleDouble) : AngleDouble
 
 These operators are used to multiply an angle by a number, there exist AngleFloat and AngleInt equivalents of them as well. They return angle objects.
 
-* /(AngleFloat, float)
+* /(AngleFloat, float) : AngleFloat
 
 This operator is used to divide an angle by a number, there also exist AngleDouble and AngleInt equivalents of this operator. They return angle objects.
 
 #### Modulo Operator
 
-* %(AngleFloat, float)
+* %(AngleFloat, float) : AngleFloat
 
 This operator is used to calculate the remainder of an angle when divided by a number, there exist AngleInt and AngleDouble equivalents as well. They return angle objects.
 
 
 #### == and != Operators
 
-* ==(AngleDouble, AngleDouble)
-* ==(AngleDouble, AngleFloat)
-* ==(AngleDouble, AngleInt)
-* ==(AngleDouble, double)
-* ==(double, AngleDouble)
-* !=(AngleDouble, AngleDouble)
-* !=(AngleDouble, AngleFloat)
-* !=(AngleDouble, AngleInt)
-* !=(AngleDouble, double)
-* !=(double, AngleDouble)
+* ==(AngleDouble, AngleDouble) : bool
+* ==(AngleDouble, AngleFloat) : bool
+* ==(AngleDouble, AngleInt) : bool
+* ==(AngleDouble, double) : bool
+* ==(double, AngleDouble) : bool
+* !=(AngleDouble, AngleDouble) : bool
+* !=(AngleDouble, AngleFloat) : bool
+* !=(AngleDouble, AngleInt) : bool
+* !=(AngleDouble, double) : bool
+* !=(double, AngleDouble) : bool
 
 These operators , as all other operators do, have their equivalents in AngleFloat and AngleInt structs.
 They compare the signed magnitudes of angles only, they first convert one into another if the units are different.
@@ -293,16 +312,16 @@ One can use them safely since they're implemented with small epsilon values taki
 #### < and > Operators
 
 ```c#
- >(AngleInt, AngleInt)
- >(AngleInt, AngleFloat)
- >(AngleInt, AngleDouble)
- >(AngleInt, int)
- >(int, AngleInt)
- <(AngleInt, AngleInt)
- <(AngleInt, AngleFloat)
- <(AngleInt, AngleDouble)
- <(AngleInt, int)
- <(int, AngleInt)
+ >(AngleInt, AngleInt) : bool
+ >(AngleInt, AngleFloat) : bool
+ >(AngleInt, AngleDouble) : bool
+ >(AngleInt, int) : bool
+ >(int, AngleInt) : bool
+ <(AngleInt, AngleInt) : bool
+ <(AngleInt, AngleFloat) : bool
+ <(AngleInt, AngleDouble) : bool
+ <(AngleInt, int) : bool
+ <(int, AngleInt) : bool
 ```
 **I had to write them in a script because the markdown syntax didn't let me use the greater operator symbol in a bullet list**
 
@@ -311,16 +330,16 @@ These operators, which have their equivalents in AngleFloat and AngleDouble, are
 #### <= and >= Operators
 
 ```c#
- >=(AngleDouble, AngleDouble)
- >=(AngleDouble, AngleFloat)
- >=(AngleDouble, AngleInt)
- >=(AngleDouble, double)
- >=(double, AngleDouble)
- <=(AngleDouble, AngleDouble)
- <=(AngleDouble, AngleFloat)
- <=(AngleDouble, AngleInt)
- <=(AngleDouble, double)
- <=(double, AngleDouble)
+ >=(AngleDouble, AngleDouble) : bool
+ >=(AngleDouble, AngleFloat) : bool
+ >=(AngleDouble, AngleInt) : bool
+ >=(AngleDouble, double) : bool
+ >=(double, AngleDouble) : bool
+ <=(AngleDouble, AngleDouble) : bool
+ <=(AngleDouble, AngleFloat) : bool
+ <=(AngleDouble, AngleInt) : bool
+ <=(AngleDouble, double) : bool
+ <=(double, AngleDouble) : bool
 ```
 These operators, which have their equivalents in AngleFloat and AngleInt, are used to compare the angles' signed magnitudes. One can use them safely since they're implemented (unless they do int to int comparison) with small epsilon values to prevent rounding errors. 
 
@@ -363,4 +382,75 @@ public void TestingOperators2()
 
 ### Public Methods
 
-TODO : Add public methods
+* SetAngle(double angle,AngleUnit? unit = null) : AngleDouble
+SetAngle allows to change the angle and its unit. When unit is not passed, the method will treat the passed angle as if it's of the same unit as it was before, and so protect the present unit. After setting the angle and the unit, it will return the angle object itself to allow for multiple actions in one line of code. This method is defined in all angle structs.
+* Increment(AngleDouble angle) : AngleDouble
+* Increment(AngleFloat angle) : AngleDouble
+* Increment(AngleInt angle) : AngleDouble
+* Increment(double angle) : AngleDouble
+* Increment(double angle, AngleUnit unit) : AngleDouble
+* Decrement(AngleFloat angle) : AngleFloat
+* Decrement(AngleDouble angle) : AngleFloat
+* Decrement(AngleInt angle) : AngleFloat
+* Decrement(float angle) : AngleFloat
+* Decrement(float angle, AngleUnit unit) : AngleFloat
+
+The Increment overloads belong to AngleDouble struct and the Decrement overloads belong to AngleFloat struct. Increment and Decrement overloads are all defined in all angle structs.They could be used like + and - operators with a difference that these are instance methods as opposed to operators. These methods increment and decrement the angle by the amount of parameter angle. Like SetAngle method, they also return themselves to allow for more code in one line.
+
+
+* ConvertToRadians() : AngleFloat
+* ConvertToDegrees() : AngleFloat
+* ConvertToGradians() : AngleFloat
+* ConvertTo(AngleUnit unit) : AngleFloat
+
+These methods convert the angle to a different unit and again return themselves after conversion to allow for more code in one line. These methodsa are also defined in each angle struct.
+
+* NormalizeTo_Zero_To_OneTurn() : AngleDouble
+* NormalizeTo_MinusHalfTurn_To_HalfTurn : AngleDouble
+* NormalizeTo(AngleType type) : AngleDouble
+
+These methods (as opposed to properties like ZeroTo360_DegreesAngle, Minus200To200_GradiansAngle, etc...) normalize the original angle and return the angle object to allow for more code in one line.
+
+* ToAngleDouble() : AngleDouble
+* ToAngleInt() : AngleInt
+
+These methods belong to AngleFloat struct and they are used to increase or reduce the precision by converting the angle object (returning the same angle in the type of target struct). They are not defined in each struct for obvious reasons. AngleInt's equivalent methods are :
+
+* ToAngleFloat() : AngleFloat
+* ToAngleDouble() : AngleDouble
+
+AngleDouble's methods are :
+
+* ToAngleFloat() : AngleFloat
+* ToAngleInt() : AngleInt
+
+Here's an example code snippet for how to use them :
+
+```c#
+public void TestingMethods()
+{
+    AngleFloat f = AngleFloat.StraightAngle; //radians by default
+    AngleDouble d = new AngleDouble(40.0,AngleUnit.Degrees);
+
+    Console.WriteLine(f.Angle); //will print 3.1415...
+    f.SetAngle(2f); //Set to 2 radians
+    Console.WriteLine(f.Increment(1.1415f).Angle);  //will print 3.1415...
+    d = f.ToAngleDouble();
+
+    Console.WriteLine(d.Angle); //will print 3.1415...
+
+    d.SetAngle(361.0,AngleUnit.Degrees);  //Set to 361 degrees
+    Console.WriteLine(d.NormalizeTo(AngleType.Zero_To_OneTurn).Angle);
+    //will print 1
+
+    Console.WriteLine(d == AngleDouble.OneDegree);  //true
+}
+```
+
+
+
+
+
+
+
+
