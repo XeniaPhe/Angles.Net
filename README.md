@@ -142,59 +142,77 @@ Constructors take two parameters as seen above. First one is the angle value whi
 
 * AngleUnit : AngleUnit
 &nbsp;
+
 Returns the unit of the angle
 * Angle : float
 &nbsp;
+
 Returns the angle
 * Revolutions : float
 &nbsp;
+
 Returns the number of revolutions of the angle
 * ZeroTo360_DegreesAngle : float
 &nbsp;
+
 Normalizes the angle between 0 and 360 degrees and returns it (does not alter the original angle and unit)
 * Minus180To180_DegreesAngle : float
 &nbsp;
+
 Normalizes the angle between -180 and 180 degrees and returns it (does not alter the original angle and unit)
 * ZeroTo2PI_RadiansAngle : float
 &nbsp;
+
 Normalizes the angle between 0 and 2ᴨ radians and returns it (does not alter the original angle and unit)
 * MinusPIToPI_RadiansAngle : float
 &nbsp;
+
 Normalizes the angle between -ᴨ and ᴨ radians and returns it (does not alter the original angle and unit)
 * ZeroTo400_GradiansAngle : float
 &nbsp;
+
 Normalizes the angle between 0 and 400 gradians and returns it (does not alter the original angle and unit)
 * Minus200To200_GradiansAngle : float
 &nbsp;
+
 Normalizes the angle between -200 and 200 gradians and returns it (does not alter the original angle and unit)
 * OpenInterval_DegreesAngle : float
 &nbsp;
+
 Converts the angle to degrees without normalizing it and returns it (does not alter the original angle and unit)
 * OpenInterval_RadiansAngle : float
 &nbsp;
+
 Converts the angle to radians without normalizing it and returns it (does not alter the original angle and unit)
 * OpenInterval_GradiansAngle : float
 &nbsp;
+
 Converts the angle to gradians without normalizing it and returns it (does not alter the original angle and unit)
 * ComplementaryAngle : float
 * SupplementaryAngle : float
 &nbsp;
+
 These two properties return the angle's complementary and supplementary angles respectively
 * ReferenceAngle : float
 &nbsp;
+
 Returns the reference angle of the angle
 * Sin, Cos, Tan, Cot, Sec, Csc, Sinh, Cosh, Tanh, Coth, Sech, Csch : float
 &nbsp;
+
 These are the trigonometric properties and they're straightforward and thus they require no explanation
 * IsPositiveAngle, IsNegativeAngle, IsZeroAngle : bool
 * IsAcuteAngle, IsRightAngle, IsObtuseAngle, IsStraightAngle, IsReflexAngle, IsCompleteAngle : bool
 &nbsp;
+
 These properties can be used to query the general location of the angle quickly
 * IsNormalizedAngleAcuteAngle, IsNormalizedAngleRightAngle, IsNormalizedAngleObtuseAngle, IsNormalizedAngleStraightAngle, IsNormalizedAngleReflexAngle, IsNormalizedAngleCompleteAngle : bool
 &nbsp;
+
 These properties first normalize the angle between 0 and 1 turn before checking it (does not alter the original angle and unit)
 * Quadrant : int
 &nbsp;
+
 Returns the quadrant (1,2,3,or 4) that the angle is within
 
 **These properties belong to AngleFloat struct, and they're identical to the other two struct's except for that the properties which return float in AngleFloat return double in AngleDouble and int in AngleInt.**
