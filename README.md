@@ -29,9 +29,9 @@ It allows conversions and operations between different units and representations
       - [Addition and Subtraction Operators](#addition-and-subtraction-operators)
       - [Multiplication and Division Operators](#multiplication-and-division-operators)
       - [Modulo Operator](#modulo-operator)
-      - [== and != Operators](#==-and-!=-operators)
-      - [< and > Operators](#<-and->-operators)
-      - [<= and >= Operators](#<=-and->=-operators)
+      - [== and != Operators](#equals-equals-and-not-equals-operators)
+      - [< and > Operators](#greater-than-and-less-than-operators)
+      - [<= and >= Operators](#greater-than-or-equal-to-and-less-than-or-equal-to-operators)
     - [Public Methods](#public-methods)
        - [Interface Implementations](#interface-implementations)
        - [Static Methods](#static-methods)
@@ -382,7 +382,7 @@ This operator is used to calculate the remainder of an angle when divided by a n
 
 [Go Back To Appendix](#appendix)
 
-#### == and != Operators
+#### Equals Equals and Not Equals Operators
 
 * ==(AngleDouble, AngleDouble) : bool
 * ==(AngleDouble, AngleFloat) : bool
@@ -401,7 +401,7 @@ One can use them safely since they're implemented with small epsilon values taki
 
 [Go Back To Appendix](#appendix)
 
-#### < and > Operators
+#### Greater Than and Less Than Operators
 
 ```c#
  >(AngleInt, AngleInt) : bool
@@ -421,7 +421,7 @@ These operators, which have their equivalents in AngleFloat and AngleDouble, are
 
 [Go Back To Appendix](#appendix)
 
-#### <= and >= Operators
+#### Greater Than or Equal To and Less Than or Equal To Operators
 
 ```c#
  >=(AngleDouble, AngleDouble) : bool
