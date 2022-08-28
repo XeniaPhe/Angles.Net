@@ -767,7 +767,7 @@ Each angle struct has their own versions of these arc-trigonometric methods. The
 
 #### **What did you learn while building this project?**
 &nbsp;
->I've learned that building a class library is not as straightforward as I thought it would be. I've learned that planning before starting to write the code is an important step after realizing that I've made some of the methods non-static that I would've instead liked to make static methods, so I had to add static versions of them also and that was a tedious process. I also learned about some properties of angles during my researches.
+I've learned that building a class library is not as straightforward as I thought it would be. I've learned that planning before starting to write the code is an important step after realizing that I've made some of the methods non-static that I would've instead liked to make static methods, so I had to add static versions of them also and that was a tedious process. I also learned about some properties of angles during my researches.
 
 
 [Go Back To Appendix](#appendix)
