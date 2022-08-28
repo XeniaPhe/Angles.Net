@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\mtuna\\Desktop\\CSharp.Net-Dedicated-Angles-Library\\Angles\\Angles.csproj": {
-      "version": "1.0.3",
+      "version": "1.0.6",
       "restore": {
         "projectUniqueName": "C:\\Users\\mtuna\\Desktop\\CSharp.Net-Dedicated-Angles-Library\\Angles\\Angles.csproj",
         "projectName": "Angles.Net",
@@ -26,14 +26,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "netcoreapp3.1"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://packagesource": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -44,8 +45,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",

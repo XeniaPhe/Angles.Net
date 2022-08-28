@@ -1,26 +1,35 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <ApplicationIcon>Angles.NetLogo.ico</ApplicationIcon>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>Angles.Net</PackageId>
-    <Version>1.0.3</Version>
+    <Version>1.0.6</Version>
     <Authors>XeniaPhe</Authors>
     <Company>XeniaPhe</Company>
     <Product>Angles.Net</Product>
     <Description>This library is dedicated to easily and quickly handling and manipulating different types and units of angles</Description>
     <PackageIcon>Angles.NetLogo.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageProjectUrl>https://github.com/XeniaPhe/Angles.Net</PackageProjectUrl>
+    <PackageProjectUrl>https://www.nuget.org/packages/Angles.Net/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/XeniaPhe/Angles.Net</RepositoryUrl>
     <RepositoryType>'git'</RepositoryType>
+    <PackageTags>Angle;Angles;Radian;Degree;Gradian;Radians;Degrees;Gradians;angle;angles;radian;degree;gradian;radians;degrees;gradians;Trigonometry;trigonometry;Math;math;Maths;maths;Conversion;conversion;Unit;unit;units;Units;Angle.Net;Angles.Net;angle.net;angles.net;.Net;.net;Angles.net;Angle.net;angles.Net;angle.Net;Free;free;</PackageTags>
+    <PackageReleaseNotes>License added,compatibility increased</PackageReleaseNotes>
+    <PackageLicenseFile>\LICENSE.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <NeutralLanguage>en-001</NeutralLanguage>
   </PropertyGroup>
+	
+	<ItemGroup>
+		<None Include="LICENSE.txt" Pack="true" PackagePath="" />
+	</ItemGroup>
 
-  <ItemGroup>
+	<ItemGroup>
     <Content Include="Angles.NetLogo.ico" />
   </ItemGroup>
 

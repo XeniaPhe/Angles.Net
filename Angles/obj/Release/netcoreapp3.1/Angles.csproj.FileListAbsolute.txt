@@ -1,0 +1,10 @@
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\obj\Release\netcoreapp3.1\Angles.csproj.AssemblyReference.cache
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\obj\Release\netcoreapp3.1\Angles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\obj\Release\netcoreapp3.1\Angles.AssemblyInfoInputs.cache
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\obj\Release\netcoreapp3.1\Angles.AssemblyInfo.cs
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\obj\Release\netcoreapp3.1\Angles.csproj.CoreCompileInputs.cache
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\bin\Release\netcoreapp3.1\Angles.deps.json
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\bin\Release\netcoreapp3.1\Angles.dll
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\bin\Release\netcoreapp3.1\Angles.pdb
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\obj\Release\netcoreapp3.1\Angles.dll
+C:\Users\mtuna\Desktop\CSharp.Net-Dedicated-Angles-Library\Angles\obj\Release\netcoreapp3.1\Angles.pdb

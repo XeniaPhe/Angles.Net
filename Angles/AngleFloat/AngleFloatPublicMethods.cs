@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using System.Diagnostics.CodeAnalysis;
 
 namespace Angles
@@ -15,7 +16,7 @@ namespace Angles
         public int CompareTo([NotNullWhen(true)] object? obj)
         {
             if (obj is null)
-                return 0;
+                return Int32.MaxValue;
 
             Type type;
 
@@ -26,7 +27,7 @@ namespace Angles
             else if (type == typeof(AngleInt))
                 return CompareTo((AngleInt)obj);
 
-            return 0;
+            return Int32.MaxValue;
         }
 
         /// <summary>

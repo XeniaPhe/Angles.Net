@@ -1,4 +1,6 @@
-﻿namespace Angles
+﻿using System;
+
+namespace Angles
 {
     public partial struct AngleFloat
     {

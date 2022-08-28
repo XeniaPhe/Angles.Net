@@ -1,4 +1,6 @@
-﻿namespace Angles
+﻿using System;
+
+namespace Angles
 {
     internal interface IAngle<AngleT, NumericT> : IFormattable, IComparable, IComparable<AngleFloat>, IComparable<AngleDouble>, IComparable<AngleInt>
     {
