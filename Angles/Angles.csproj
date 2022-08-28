@@ -8,7 +8,7 @@
     <ApplicationIcon>Angles.NetLogo.ico</ApplicationIcon>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>Angles.Net</PackageId>
-    <Version>1.0.6</Version>
+    <Version>1.0.7</Version>
     <Authors>XeniaPhe</Authors>
     <Company>XeniaPhe</Company>
     <Product>Angles.Net</Product>
@@ -23,6 +23,7 @@
     <PackageLicenseFile>\LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <NeutralLanguage>en-001</NeutralLanguage>
+    <SignAssembly>False</SignAssembly>
   </PropertyGroup>
 	
 	<ItemGroup>
@@ -30,18 +31,17 @@
 	</ItemGroup>
 
 	<ItemGroup>
-    <Content Include="Angles.NetLogo.ico" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\src\Angles.NetLogo.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
-
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\src\Angles.NetLogo.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\src\Angles.NetLogo.ico">
+		    <Pack>True</Pack>
+		    <PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 </Project>

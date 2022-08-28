@@ -13,7 +13,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.6",
+    "version": "1.0.7",
     "restore": {
       "projectUniqueName": "C:\\Users\\mtuna\\Desktop\\CSharp.Net-Dedicated-Angles-Library\\Angles\\Angles.csproj",
       "projectName": "Angles.Net",
@@ -37,8 +37,7 @@
         "netcoreapp3.1"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {},
-        "https://packagesource": {}
+        "https://nuget.pkg.github.com/XeniaPhe/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
