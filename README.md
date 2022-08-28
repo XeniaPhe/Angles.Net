@@ -765,7 +765,7 @@ Each angle struct has their own versions of these arc-trigonometric methods. The
 
 ## Lessons Learned
 
-#### What did you learn while building this project?
+#### **What did you learn while building this project?**
 &nbsp;
 >I've learned that building a class library is not as straightforward as I thought it would be. I've learned that planning before starting to write the code is an important step after realizing that I've made some of the methods non-static that I would've instead liked to make static methods, so I had to add static versions of them also and that was a tedious process. I also learned about some properties of angles during my researches.
 
@@ -774,7 +774,7 @@ Each angle struct has their own versions of these arc-trigonometric methods. The
 
 ## FAQ
 
-#### What made you write this library?
+#### **What made you write this library?**
 
 Many functions in Math APIs return angle values, most of them are in radians for convenience. However this might not be so much conveient for a programmer, because radians don't make sense to most of us,one can instantly visualize what 150 degrees looks like but it's hard to visualize an angle in radians unless it's 0 or ᴨ or 2ᴨ. So some people like myself could find themselves converting them to degrees using consts like PI in the Math API they are using, and then after being done with the angle it should be converted back to radians, and these back and forth conversions aren't necessarily made only once in a project, and also they look ugly. Another problem is, even if one only uses radians, not all methods return the angles in the same ranges, some return angles between -ᴨ and ᴨ, some other methods return between 0 and 2ᴨ and even some of them return between -ᴨ/4 and ᴨ/4. So this causes confusion and might require conversions or extra if statements.
 
@@ -782,7 +782,7 @@ Many functions in Math APIs return angle values, most of them are in radians for
 
 So one day I was working on a project in Unity and I had to deal with angles again, after I finished the code and ran the game I understood that I somehow messed up a conversion because the result was so funny. Then I remembered that I had problems with dealing with angles before too. Then I thought why not just make an angles library for myself?, so I created a struct called Angle and started working on it. As I worked on, I realized that I was overwriting it and adding features that I didn't need, so I said let's turn this into its own project and put a hold onto the Unity project. So I closed Unity and created a project called Angles, renamed the Angle struct to AngleFloat and added AngleInt and AngleDouble structs too. Then I decided to implement the IAngle interface and added it too. I designed and changed the designs that I didn't like and coded the project like this for around a week, and now it's finally done and I'm relieved.
 
-#### What makes this library different than other alternatives?
+#### **What makes this library different than other alternatives?**
 
 To be honest, I didn't look into other libraries, if I did so I would probably not have coded this and just used one of them and moved on. So for that reason, I can't tell. However I can tell that my motivation and aim while working on Angles.Net was to make it as flexible and easy to use as possible such that I made 4 to 5 overloads in average for each method.
 
