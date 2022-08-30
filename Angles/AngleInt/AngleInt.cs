@@ -102,37 +102,39 @@ namespace Angles
         internal float ConvertTo_Zero_To_OneTurn_Angle()
         {
             float oneTurn = GetOneTurn();
-            float division = (int)Math.Floor((double)angle / oneTurn);
-            var result = (angle + division * oneTurn) % oneTurn;
-            return result;
+            float division = (float)Math.Floor(angle / oneTurn);
+            return angle - division * oneTurn;
         }
 
         internal float ConvertTo_Zero_To_OneTurn_Angle(int angle)
         {
             float oneTurn = GetOneTurn();
-            float division = (int)Math.Floor((double)angle / oneTurn);
-            var result = (angle + division * oneTurn) % oneTurn;
-            return result;
+            float division = (float)Math.Floor(angle / oneTurn);
+            return angle - division * oneTurn;
         }
 
         internal float ConvertTo_MinusHalfTurn_To_HalfTurn_Angle()
         {
+            float oneTurn = GetOneTurn();
             float halfTurn = GetHalfTurn();
-            float result = angle;
+            float division = (float)Math.Floor(angle / oneTurn);
+            float result = angle - division * oneTurn - halfTurn;
 
-            if (angle > halfTurn)
-                result = (angle % halfTurn) - halfTurn;
+            if (result > halfTurn)
+                result = (result % halfTurn) - halfTurn;
 
             return result;
         }
 
         internal float ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(int angle)
         {
+            float oneTurn = GetOneTurn();
             float halfTurn = GetHalfTurn();
-            float result = angle;
+            float division = (float)Math.Floor(angle / oneTurn);
+            float result = angle - division * oneTurn - halfTurn;
 
-            if (angle > halfTurn)
-                result = (angle % halfTurn) - halfTurn;
+            if (result > halfTurn)
+                result = (result % halfTurn) - halfTurn;
 
             return result;
         }

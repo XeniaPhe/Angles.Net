@@ -148,7 +148,7 @@ namespace Angles
             lhs.ConvertTo(unit);
             rhs.ConvertTo(unit);
 
-            float delta = Math.Abs(lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - rhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle());
+            float delta = Math.Abs(lhs.ConvertTo_Zero_To_OneTurn_Angle() - rhs.ConvertTo_Zero_To_OneTurn_Angle());
 
             if (delta > lhs.GetHalfTurn() + Epsilon)
                 delta = lhs.GetOneTurn() - delta;
@@ -161,7 +161,7 @@ namespace Angles
             lhs.ConvertTo(unit);
             rhs.ConvertTo(unit);
 
-            float delta = Math.Abs(lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - (float)rhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle());
+            float delta = Math.Abs(lhs.ConvertTo_Zero_To_OneTurn_Angle() - (float)rhs.ConvertTo_Zero_To_OneTurn_Angle());
 
             if (delta > lhs.GetHalfTurn() + Epsilon)
                 delta = lhs.GetOneTurn() - delta;
@@ -174,7 +174,7 @@ namespace Angles
             lhs.ConvertTo(unit);
             rhs.ConvertTo(unit);
 
-            float delta = Math.Abs(lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - rhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle());
+            float delta = Math.Abs(lhs.ConvertTo_Zero_To_OneTurn_Angle() - rhs.ConvertTo_Zero_To_OneTurn_Angle());
 
             if (delta > lhs.GetHalfTurn() + Epsilon)
                 delta = lhs.GetOneTurn() - delta;
@@ -185,7 +185,7 @@ namespace Angles
         public static bool AreParallel(AngleFloat lhs, AngleFloat rhs)
         {
             float rhsAngle = rhs.ConvertAngleTo(lhs.unit, rhs.angle);
-            float difference = Math.Abs(lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(rhsAngle));
+            float difference = Math.Abs(lhs.ConvertTo_Zero_To_OneTurn_Angle() - lhs.ConvertTo_Zero_To_OneTurn_Angle(rhsAngle));
 
             return (difference <= Epsilon || Math.Abs(difference - lhs.GetHalfTurn()) <= Epsilon);
         }
@@ -193,7 +193,7 @@ namespace Angles
         public static bool AreParallel(AngleFloat lhs, AngleDouble rhs)
         {
             float rhsAngle = (float)rhs.ConvertAngleTo(lhs.unit, rhs.angle);
-            float difference = Math.Abs(lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(rhsAngle));
+            float difference = Math.Abs(lhs.ConvertTo_Zero_To_OneTurn_Angle() - lhs.ConvertTo_Zero_To_OneTurn_Angle(rhsAngle));
 
             return (difference <= Epsilon || Math.Abs(difference - lhs.GetHalfTurn()) <= Epsilon);
         }
@@ -201,7 +201,7 @@ namespace Angles
         public static bool AreParallel(AngleFloat lhs, AngleInt rhs)
         {
             float rhsAngle = rhs.ConvertAngleTo(lhs.unit, rhs.angle);
-            float difference = Math.Abs(lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(rhsAngle));
+            float difference = Math.Abs(lhs.ConvertTo_Zero_To_OneTurn_Angle() - lhs.ConvertTo_Zero_To_OneTurn_Angle(rhsAngle));
 
             return (difference <= Epsilon || Math.Abs(difference - lhs.GetHalfTurn()) <= Epsilon);
         }
@@ -210,7 +210,7 @@ namespace Angles
         {
             float rhsAngle = rhs.ConvertAngleTo(lhs.unit, rhs.angle);
 
-            float difference = Math.Abs(lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(rhsAngle));
+            float difference = Math.Abs(lhs.ConvertTo_Zero_To_OneTurn_Angle() - lhs.ConvertTo_Zero_To_OneTurn_Angle(rhsAngle));
             float temp = difference - lhs.GetQuarterTurn();
 
             return (Math.Abs(temp) <= Epsilon || Math.Abs(temp - lhs.GetHalfTurn()) <= Epsilon);
@@ -220,7 +220,7 @@ namespace Angles
         {
             float rhsAngle = (float)rhs.ConvertAngleTo(lhs.unit, rhs.angle);
 
-            float difference = Math.Abs(lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(rhsAngle));
+            float difference = Math.Abs(lhs.ConvertTo_Zero_To_OneTurn_Angle() - lhs.ConvertTo_Zero_To_OneTurn_Angle(rhsAngle));
             float temp = difference - lhs.GetQuarterTurn();
 
             return (Math.Abs(temp) <= Epsilon || Math.Abs(temp - lhs.GetHalfTurn()) <= Epsilon);
@@ -230,7 +230,7 @@ namespace Angles
         {
             float rhsAngle = rhs.ConvertAngleTo(lhs.unit, rhs.angle);
 
-            float difference = Math.Abs(lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(rhsAngle));
+            float difference = Math.Abs(lhs.ConvertTo_Zero_To_OneTurn_Angle() - lhs.ConvertTo_Zero_To_OneTurn_Angle(rhsAngle));
             float temp = difference - lhs.GetQuarterTurn();
 
             return (Math.Abs(temp) <= Epsilon || Math.Abs(temp - lhs.GetHalfTurn()) <= Epsilon);
@@ -282,21 +282,21 @@ namespace Angles
         {
             float rhsAngle = rhs.ConvertAngleTo(lhs.unit, rhs.angle);
 
-            return Math.Abs(lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(rhsAngle)) <= Epsilon;
+            return Math.Abs(lhs.ConvertTo_Zero_To_OneTurn_Angle() - lhs.ConvertTo_Zero_To_OneTurn_Angle(rhsAngle)) <= Epsilon;
         }
 
         public static bool AreCoterminal(AngleFloat lhs, AngleDouble rhs)
         {
             float rhsAngle = (float)rhs.ConvertAngleTo(lhs.unit, rhs.angle);
 
-            return Math.Abs(lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(rhsAngle)) <= Epsilon;
+            return Math.Abs(lhs.ConvertTo_Zero_To_OneTurn_Angle() - lhs.ConvertTo_Zero_To_OneTurn_Angle(rhsAngle)) <= Epsilon;
         }
 
         public static bool AreCoterminal(AngleFloat lhs, AngleInt rhs)
         {
             float rhsAngle = rhs.ConvertAngleTo(lhs.unit, rhs.angle);
 
-            return Math.Abs(lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - lhs.ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(rhsAngle)) <= Epsilon;
+            return Math.Abs(lhs.ConvertTo_Zero_To_OneTurn_Angle() - lhs.ConvertTo_Zero_To_OneTurn_Angle(rhsAngle)) <= Epsilon;
         }
 
         /// <summary>
@@ -613,7 +613,7 @@ namespace Angles
         {
             float otherAngle = other.ConvertAngleTo(unit, other.angle);
 
-            float delta = Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(otherAngle));
+            float delta = Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(otherAngle));
             AngleFloat deltaAngle = new AngleFloat(delta, unit);
 
             if (delta > GetHalfTurn() + Epsilon)
@@ -626,7 +626,7 @@ namespace Angles
         {
             float otherAngle = (float)other.ConvertAngleTo(unit, other.angle);
 
-            float delta = Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(otherAngle));
+            float delta = Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(otherAngle));
             AngleFloat deltaAngle = new AngleFloat(delta, unit);
 
             if (delta > GetHalfTurn() + Epsilon)
@@ -639,7 +639,7 @@ namespace Angles
         {
             float otherAngle = other.ConvertAngleTo(unit, other.angle);
 
-            float delta = Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(otherAngle));
+            float delta = Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(otherAngle));
             AngleFloat deltaAngle = new AngleFloat(delta, unit);
 
             if (delta > GetHalfTurn() + Epsilon)
@@ -650,7 +650,7 @@ namespace Angles
 
         public AngleFloat GetDeltaAngle(float other)
         {
-            float delta = Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(other));
+            float delta = Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(other));
             AngleFloat deltaAngle = new AngleFloat(delta, unit);
 
             if (delta > GetHalfTurn() + Epsilon)
@@ -663,7 +663,7 @@ namespace Angles
         {
             other = ConvertAngleFrom(unit, other);
 
-            float delta = Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(other));
+            float delta = Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(other));
             AngleFloat deltaAngle = new AngleFloat(delta, this.unit);
 
             if (delta > GetHalfTurn() + Epsilon)
@@ -674,8 +674,8 @@ namespace Angles
 
         public int CompareNormalizedAngles(AngleFloat other)
         {
-            float angle = ConvertTo_MinusHalfTurn_To_HalfTurn_Angle();
-            float otherAngle = ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(other.ConvertAngleTo(unit, other.angle));
+            float angle = ConvertTo_Zero_To_OneTurn_Angle();
+            float otherAngle = ConvertTo_Zero_To_OneTurn_Angle(other.ConvertAngleTo(unit, other.angle));
 
             if (otherAngle > angle + Epsilon)
                 return -1;
@@ -687,8 +687,8 @@ namespace Angles
 
         public int CompareNormalizedAngles(AngleDouble other)
         {
-            float angle = ConvertTo_MinusHalfTurn_To_HalfTurn_Angle();
-            float otherAngle = ConvertTo_MinusHalfTurn_To_HalfTurn_Angle((float)other.ConvertAngleTo(unit, other.angle));
+            float angle = ConvertTo_Zero_To_OneTurn_Angle();
+            float otherAngle = ConvertTo_Zero_To_OneTurn_Angle((float)other.ConvertAngleTo(unit, other.angle));
 
             if (otherAngle > angle + Epsilon)
                 return -1;
@@ -700,8 +700,8 @@ namespace Angles
 
         public int CompareNormalizedAngles(AngleInt other)
         {
-            float angle = ConvertTo_MinusHalfTurn_To_HalfTurn_Angle();
-            float otherAngle = ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(other.ConvertAngleTo(unit, other.angle));
+            float angle = ConvertTo_Zero_To_OneTurn_Angle();
+            float otherAngle = ConvertTo_Zero_To_OneTurn_Angle(other.ConvertAngleTo(unit, other.angle));
 
             if (otherAngle > angle + Epsilon)
                 return -1;
@@ -713,8 +713,8 @@ namespace Angles
 
         public int CompareNormalizedAngles(float other)
         {
-            float angle = ConvertTo_MinusHalfTurn_To_HalfTurn_Angle();
-            other = ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(other);
+            float angle = ConvertTo_Zero_To_OneTurn_Angle();
+            other = ConvertTo_Zero_To_OneTurn_Angle(other);
 
             if (other > angle + Epsilon)
                 return -1;
@@ -728,8 +728,8 @@ namespace Angles
         {
             other = ConvertAngleFrom(unit, other);
 
-            float angle = ConvertTo_MinusHalfTurn_To_HalfTurn_Angle();
-            other = ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(other);
+            float angle = ConvertTo_Zero_To_OneTurn_Angle();
+            other = ConvertTo_Zero_To_OneTurn_Angle(other);
 
             if (other > angle + Epsilon)
                 return -1;
@@ -742,7 +742,7 @@ namespace Angles
         public bool IsParallelTo(AngleFloat other)
         {
             float otherAngle = other.ConvertAngleTo(unit, other.angle);
-            float difference = Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(otherAngle));
+            float difference = Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(otherAngle));
 
             return (difference <= Epsilon || Math.Abs(difference - GetHalfTurn()) <= Epsilon);
         }
@@ -750,7 +750,7 @@ namespace Angles
         public bool IsParallelTo(AngleDouble other)
         {
             float otherAngle = (float)other.ConvertAngleTo(unit, other.angle);
-            float difference = Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(otherAngle));
+            float difference = Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(otherAngle));
 
             return (difference <= Epsilon || Math.Abs(difference - GetHalfTurn()) <= Epsilon);
         }
@@ -758,14 +758,14 @@ namespace Angles
         public bool IsParallelTo(AngleInt other)
         {
             float otherAngle = other.ConvertAngleTo(unit, other.angle);
-            float difference = Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(otherAngle));
+            float difference = Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(otherAngle));
 
             return (difference <= Epsilon || Math.Abs(difference - GetHalfTurn()) <= Epsilon);
         }
 
         public bool IsParallelTo(float other)
         {
-            float difference = Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(other));
+            float difference = Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(other));
 
             return (difference <= Epsilon || Math.Abs(difference - GetHalfTurn()) <= Epsilon);
         }
@@ -773,7 +773,7 @@ namespace Angles
         public bool IsParallelTo(float other, AngleUnit unit)
         {
             other = ConvertAngleFrom(unit, other);
-            float difference = Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(other));
+            float difference = Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(other));
 
             return (difference <= Epsilon || Math.Abs(difference - GetHalfTurn()) <= Epsilon);
         }
@@ -782,7 +782,7 @@ namespace Angles
         {
             float otherAngle = other.ConvertAngleTo(unit, other.angle);
 
-            float difference = Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(otherAngle));
+            float difference = Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(otherAngle));
             float temp = difference - GetQuarterTurn();
 
             return (Math.Abs(temp) <= Epsilon || Math.Abs(temp - GetHalfTurn()) <= Epsilon);
@@ -792,7 +792,7 @@ namespace Angles
         {
             float otherAngle = (float)other.ConvertAngleTo(unit, other.angle);
 
-            float difference = Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(otherAngle));
+            float difference = Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(otherAngle));
             float temp = difference - GetQuarterTurn();
 
             return (Math.Abs(temp) <= Epsilon || Math.Abs(temp - GetHalfTurn()) <= Epsilon);
@@ -802,7 +802,7 @@ namespace Angles
         {
             float otherAngle = other.ConvertAngleTo(unit, other.angle);
 
-            float difference = Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(otherAngle));
+            float difference = Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(otherAngle));
             float temp = difference - GetQuarterTurn();
 
             return (Math.Abs(temp) <= Epsilon || Math.Abs(temp - GetHalfTurn()) <= Epsilon);
@@ -810,7 +810,7 @@ namespace Angles
 
         public bool IsPerpendicularTo(float other)
         {
-            float difference = Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(other));
+            float difference = Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(other));
             float temp = difference - GetQuarterTurn();
 
             return (Math.Abs(temp) <= Epsilon || Math.Abs(temp - GetHalfTurn()) <= Epsilon);
@@ -819,7 +819,7 @@ namespace Angles
         public bool IsPerpendicularTo(float other, AngleUnit unit)
         {
             other = ConvertAngleFrom(unit, other);
-            float difference = Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(other));
+            float difference = Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(other));
             float temp = difference - GetQuarterTurn();
 
             return (Math.Abs(temp) <= Epsilon || Math.Abs(temp - GetHalfTurn()) <= Epsilon);
@@ -895,33 +895,33 @@ namespace Angles
         {
             float otherAngle = other.ConvertAngleTo(unit, other.angle);
 
-            return Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(otherAngle)) <= Epsilon;
+            return Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(otherAngle)) <= Epsilon;
         }
 
         public bool IsCoterminalTo(AngleDouble other)
         {
             float otherAngle = (float)other.ConvertAngleTo(unit, other.angle);
 
-            return Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(otherAngle)) <= Epsilon;
+            return Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(otherAngle)) <= Epsilon;
         }
 
         public bool IsCoterminalTo(AngleInt other)
         {
             float otherAngle = other.ConvertAngleTo(unit, other.angle);
 
-            return Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(otherAngle)) <= Epsilon;
+            return Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(otherAngle)) <= Epsilon;
         }
 
         public bool IsCoterminalTo(float other)
         {
-            return Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(other)) <= Epsilon;
+            return Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(other)) <= Epsilon;
         }
 
         public bool IsCoterminalTo(float other, AngleUnit unit)
         {
             other = ConvertAngleFrom(unit, other);
 
-            return Math.Abs(ConvertTo_MinusHalfTurn_To_HalfTurn_Angle() - ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(other)) <= Epsilon;
+            return Math.Abs(ConvertTo_Zero_To_OneTurn_Angle() - ConvertTo_Zero_To_OneTurn_Angle(other)) <= Epsilon;
         }
 
         #endregion

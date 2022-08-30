@@ -32,29 +32,29 @@ namespace Angles
 
         public double SupplementaryAngle => GetHalfTurn() - ConvertTo_Zero_To_OneTurn_Angle();
 
-        public double Sin => Math.Sin(MinusPIToPI_RadiansAngle);
+        public double Sin => Math.Sin(ZeroTo2PI_RadiansAngle);
 
-        public double Cos => Math.Cos(MinusPIToPI_RadiansAngle);
+        public double Cos => Math.Cos(ZeroTo2PI_RadiansAngle);
 
-        public double Tan => Math.Tan(MinusPIToPI_RadiansAngle);
+        public double Tan => Math.Tan(ZeroTo2PI_RadiansAngle);
 
-        public double Cot => 1.0 / Math.Tan(MinusPIToPI_RadiansAngle);
+        public double Cot => 1.0 / Math.Tan(ZeroTo2PI_RadiansAngle);
 
-        public double Sec => 1.0 / Math.Cos(MinusPIToPI_RadiansAngle);
+        public double Sec => 1.0 / Math.Cos(ZeroTo2PI_RadiansAngle);
 
-        public double Csc => 1.0 / Math.Sin(MinusPIToPI_RadiansAngle);
+        public double Csc => 1.0 / Math.Sin(ZeroTo2PI_RadiansAngle);
 
-        public double Sinh => Math.Sinh(MinusPIToPI_RadiansAngle);
+        public double Sinh => Math.Sinh(ZeroTo2PI_RadiansAngle);
 
-        public double Cosh => Math.Cosh(MinusPIToPI_RadiansAngle);
+        public double Cosh => Math.Cosh(ZeroTo2PI_RadiansAngle);
 
-        public double Tanh => Math.Tanh(MinusPIToPI_RadiansAngle);
+        public double Tanh => Math.Tanh(ZeroTo2PI_RadiansAngle);
 
-        public double Coth => 1.0 / Math.Tanh(MinusPIToPI_RadiansAngle);
+        public double Coth => 1.0 / Math.Tanh(ZeroTo2PI_RadiansAngle);
 
-        public double Sech => 1.0 / Math.Cosh(MinusPIToPI_RadiansAngle);
+        public double Sech => 1.0 / Math.Cosh(ZeroTo2PI_RadiansAngle);
 
-        public double Csch => 1.0 / Math.Sinh(MinusPIToPI_RadiansAngle);
+        public double Csch => 1.0 / Math.Sinh(ZeroTo2PI_RadiansAngle);
 
         public bool IsPositiveAngle => this > ZeroAngle;
 

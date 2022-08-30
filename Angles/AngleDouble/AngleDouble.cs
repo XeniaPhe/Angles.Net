@@ -99,38 +99,41 @@ namespace Angles
         internal double ConvertTo_Zero_To_OneTurn_Angle()
         {
             double oneTurn = GetOneTurn();
-            double division = (double)Math.Floor(angle / oneTurn);
-            var result = (angle + division * oneTurn) % oneTurn;
-            return result;
+            double division = Math.Floor(angle / oneTurn);
+            return angle - division * oneTurn;
         }
 
         internal double ConvertTo_Zero_To_OneTurn_Angle(double angle)
         {
             double oneTurn = GetOneTurn();
-            double division = (double)Math.Floor(angle / oneTurn);
-            var result = (angle + division * oneTurn) % oneTurn;
-            return result;
+            double division = Math.Floor(angle / oneTurn);
+            return angle - division * oneTurn;
         }
 
         internal double ConvertTo_MinusHalfTurn_To_HalfTurn_Angle()
         {
+            double oneTurn = GetOneTurn();
             double halfTurn = GetHalfTurn();
-            double result = angle;
+            double division = Math.Floor(angle / oneTurn);
+            double result = angle - division * oneTurn - halfTurn;
 
-            if (angle > halfTurn)
-                result = (angle % halfTurn) - halfTurn;
+            if (result > halfTurn)
+                result = (result % halfTurn) - halfTurn;
 
             return result;
         }
 
         internal double ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(double angle)
         {
+            double oneTurn = GetOneTurn();
             double halfTurn = GetHalfTurn();
+            double division = Math.Floor(angle / oneTurn);
+            double result = angle - division * oneTurn - halfTurn;
 
-            if (angle > halfTurn)
-                angle = (angle % halfTurn) - halfTurn;
+            if (result > halfTurn)
+                result = (result % halfTurn) - halfTurn;
 
-            return angle;
+            return result;
         }
 
         internal double ConvertAngleTo(AngleUnit to, double angle)

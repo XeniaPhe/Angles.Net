@@ -32,29 +32,29 @@ namespace Angles
 
         public int SupplementaryAngle => (int)Math.Round(GetHalfTurn() - ConvertTo_Zero_To_OneTurn_Angle());
 
-        public int Sin => (int)Math.Round(Math.Sin(MinusPIToPI_RadiansAngle));
+        public int Sin => (int)Math.Round(Math.Sin(ZeroTo2PI_RadiansAngle));
 
-        public int Cos => (int)Math.Round(Math.Cos(MinusPIToPI_RadiansAngle));
+        public int Cos => (int)Math.Round(Math.Cos(ZeroTo2PI_RadiansAngle));
 
-        public int Tan => (int)Math.Round(Math.Tan(MinusPIToPI_RadiansAngle));
+        public int Tan => (int)Math.Round(Math.Tan(ZeroTo2PI_RadiansAngle));
 
-        public int Cot => (int)Math.Round(1.0 / Math.Tan(MinusPIToPI_RadiansAngle));
+        public int Cot => (int)Math.Round(1.0 / Math.Tan(ZeroTo2PI_RadiansAngle));
 
-        public int Sec => (int)Math.Round(1.0 / Math.Cos(MinusPIToPI_RadiansAngle));
+        public int Sec => (int)Math.Round(1.0 / Math.Cos(ZeroTo2PI_RadiansAngle));
 
-        public int Csc => (int)Math.Round(1.0 / Math.Sin(MinusPIToPI_RadiansAngle));
+        public int Csc => (int)Math.Round(1.0 / Math.Sin(ZeroTo2PI_RadiansAngle));
 
-        public int Sinh => (int)Math.Round(Math.Sinh(MinusPIToPI_RadiansAngle));
+        public int Sinh => (int)Math.Round(Math.Sinh(ZeroTo2PI_RadiansAngle));
 
-        public int Cosh => (int)Math.Round(Math.Cosh(MinusPIToPI_RadiansAngle));
+        public int Cosh => (int)Math.Round(Math.Cosh(ZeroTo2PI_RadiansAngle));
 
-        public int Tanh => (int)Math.Round(Math.Tanh(MinusPIToPI_RadiansAngle));
+        public int Tanh => (int)Math.Round(Math.Tanh(ZeroTo2PI_RadiansAngle));
 
-        public int Coth => (int)Math.Round(1.0 / Math.Tanh(MinusPIToPI_RadiansAngle));
+        public int Coth => (int)Math.Round(1.0 / Math.Tanh(ZeroTo2PI_RadiansAngle));
 
-        public int Sech => (int)Math.Round(1.0 / Math.Cosh(MinusPIToPI_RadiansAngle));
+        public int Sech => (int)Math.Round(1.0 / Math.Cosh(ZeroTo2PI_RadiansAngle));
 
-        public int Csch => (int)Math.Round(1.0 / Math.Sinh(MinusPIToPI_RadiansAngle));
+        public int Csch => (int)Math.Round(1.0 / Math.Sinh(ZeroTo2PI_RadiansAngle));
 
         public bool IsPositiveAngle => this > ZeroAngle;
 

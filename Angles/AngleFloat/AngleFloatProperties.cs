@@ -32,29 +32,29 @@ namespace Angles
 
         public float SupplementaryAngle => GetHalfTurn() - ConvertTo_Zero_To_OneTurn_Angle();
 
-        public float Sin => (float)Math.Sin(MinusPIToPI_RadiansAngle);
+        public float Sin => (float)Math.Sin(ZeroTo2PI_RadiansAngle);
 
-        public float Cos => (float)Math.Cos(MinusPIToPI_RadiansAngle);
+        public float Cos => (float)Math.Cos(ZeroTo2PI_RadiansAngle);
 
-        public float Tan => (float)Math.Tan(MinusPIToPI_RadiansAngle);
+        public float Tan => (float)Math.Tan(ZeroTo2PI_RadiansAngle);
 
-        public float Cot => (float)(1.0 / Math.Tan(MinusPIToPI_RadiansAngle));
+        public float Cot => (float)(1.0 / Math.Tan(ZeroTo2PI_RadiansAngle));
 
-        public float Sec => (float)(1.0 / Math.Cos(MinusPIToPI_RadiansAngle));
+        public float Sec => (float)(1.0 / Math.Cos(ZeroTo2PI_RadiansAngle));
 
-        public float Csc => (float)(1.0 / Math.Sin(MinusPIToPI_RadiansAngle));
+        public float Csc => (float)(1.0 / Math.Sin(ZeroTo2PI_RadiansAngle));
 
-        public float Sinh => (float)Math.Sinh(MinusPIToPI_RadiansAngle);
+        public float Sinh => (float)Math.Sinh(ZeroTo2PI_RadiansAngle);
 
-        public float Cosh => (float)Math.Cosh(MinusPIToPI_RadiansAngle);
+        public float Cosh => (float)Math.Cosh(ZeroTo2PI_RadiansAngle);
 
-        public float Tanh => (float)Math.Tanh(MinusPIToPI_RadiansAngle);
+        public float Tanh => (float)Math.Tanh(ZeroTo2PI_RadiansAngle);
 
-        public float Coth => (float)(1.0 / Math.Tanh(MinusPIToPI_RadiansAngle));
+        public float Coth => (float)(1.0 / Math.Tanh(ZeroTo2PI_RadiansAngle));
 
-        public float Sech => (float)(1.0 / Math.Cosh(MinusPIToPI_RadiansAngle));
+        public float Sech => (float)(1.0 / Math.Cosh(ZeroTo2PI_RadiansAngle));
 
-        public float Csch => (float)(1.0 / Math.Sinh(MinusPIToPI_RadiansAngle));
+        public float Csch => (float)(1.0 / Math.Sinh(ZeroTo2PI_RadiansAngle));
 
         public bool IsPositiveAngle => this > ZeroAngle;
 
