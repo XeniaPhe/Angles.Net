@@ -43,7 +43,7 @@ It allows conversions and operations between different units and representations
 
 ## License
 
-[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://www.nuget.org/packages/Angles.Net/1.1.1/License)
+[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://www.nuget.org/packages/Angles.Net/1.1.2/License)
 
 [BSD-2-Clause](https://choosealicense.com/licenses/bsd-2-clause/)
 
@@ -54,8 +54,8 @@ It allows conversions and operations between different units and representations
 You can install Angles.Net by opening the Package Manager Console in the Visual Studio from View/Other Windows/Package Manager Console and typing in one of the commands :
 
 ```bash
- Install-Package Angles.Net -Version 1.1.1
- dotnet add package Angles.Net --version 1.1.1
+ Install-Package Angles.Net -Version 1.1.2
+ dotnet add package Angles.Net --version 1.1.2
 ```
 
 Alternatively, you can use the NuGet Package Manager GUI to install Angles.Net
