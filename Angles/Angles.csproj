@@ -8,7 +8,7 @@
     <ApplicationIcon>Angles.NetLogo.ico</ApplicationIcon>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>Angles.Net</PackageId>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
     <Authors>XeniaPhe</Authors>
     <Company>XeniaPhe</Company>
     <Product>Angles.Net</Product>

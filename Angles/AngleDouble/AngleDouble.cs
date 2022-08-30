@@ -113,12 +113,11 @@ namespace Angles
         internal double ConvertTo_MinusHalfTurn_To_HalfTurn_Angle()
         {
             double oneTurn = GetOneTurn();
-            double halfTurn = GetHalfTurn();
-            double division = Math.Floor(angle / oneTurn);
-            double result = angle - division * oneTurn - halfTurn;
+            double division = (float)Math.Floor(angle / oneTurn);
+            double result = angle - division * oneTurn;
 
-            if (result > halfTurn)
-                result = (result % halfTurn) - halfTurn;
+            if (result > GetHalfTurn())
+                result -= oneTurn;
 
             return result;
         }
@@ -126,12 +125,11 @@ namespace Angles
         internal double ConvertTo_MinusHalfTurn_To_HalfTurn_Angle(double angle)
         {
             double oneTurn = GetOneTurn();
-            double halfTurn = GetHalfTurn();
-            double division = Math.Floor(angle / oneTurn);
-            double result = angle - division * oneTurn - halfTurn;
+            double division = (float)Math.Floor(angle / oneTurn);
+            double result = angle - division * oneTurn;
 
-            if (result > halfTurn)
-                result = (result % halfTurn) - halfTurn;
+            if (result > GetHalfTurn())
+                result -= oneTurn;
 
             return result;
         }
